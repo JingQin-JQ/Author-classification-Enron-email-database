@@ -169,9 +169,14 @@ def syntactic_features(doc):
 def semantic_features_content(content):
     sid = SentimentIntensityAnalyzer()
     scores = sid.polarity_scores(content)
+    greeting_words_list = ["Dear", "To Whom It May Concern"]
+    nr_greeting = 0
+    for word in content.split():
+        if word in greeting_words_list:
+            nr_greeting += 1
     nr_emoticons = 0
     nr_emoticons += len(emot.emoji(content))+len(emot.emoticons(content))
-    return pd.Series({"score_semantic": scores['compound'], "nr_emoticons": nr_emoticons})
+    return pd.Series({"score_semantic": scores['compound'], "nr_emoticons": nr_emoticons,"nr_greeting": nr_greeting})
 
 
 def semantic_features(doc):

@@ -24,19 +24,34 @@ Enron email database from Kaggle website <https://www.kaggle.com/wcukierski/enro
 7. Store the predictions
 
 ### Output files as results:
-In the data folder:
+In the result folder:
 
 1. Aggregate\_per\_author.csv
 2. Statistics\_for\_single\_training\_example.csv
 3. predictions\_test\_data.csv
 
-### Other output files:
-In the root folder( not included in git):
+### Output figures:
+In the figs folder:
 
-1. email\_csv.csv
+1. sample for results.png
+2. avg_nr_word_per_sent.png	
+3. beck_s.png
+4. correlation matrix with top 10 features.png
+5. correlation matrix.png	
+6. distribution of the number of emails.png
+7. nr_colons.png	
+8. shackleton_s.png
+
+### Other output files:
+In the data folder( not included in git):
+
+1. email.csv
+-- original data download from kaggle
+
+2. email\_info.csv
 --save email information after Message analysis step
 
-2. emails\_df\_1000\_12\_tmp1.pkl
+3. emails\_df\_1000\_12\_tmp1.pkl
 
 	emails\_df\_1000\_12\_tmp2.pkl
    	
@@ -45,4 +60,5 @@ In the root folder( not included in git):
    	emails\_df\_1000\_12\_tmp4.pkl
 
 -- save doc structures after applying nlp
+
 
