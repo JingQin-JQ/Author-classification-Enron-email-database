@@ -1,64 +1,39 @@
 # Author classification on the Enron email database
 
-## -Python for text analysis 
 
-## Script files
-In the src folder:
+This project extracts NLP features from Enron email database, and predicts the authors of emails. 
+ 
 
-1. Enron.ipynb -- as the main script
-2. extract\_email\_info.py -- for extract information from emails
-3. features.py --  for extract features for classification
+## File structure
+- src folder
+	- Enron.ipynb: main jupyter notebook script
+	- extract\_email\_info.py: functions to get structure information from emails
+	- features.py: functions to extract features for classification
+- doc folder
+	- enron\_email\_jing.key: presentation slides
+	- Final\_Assignment_2017-2018.pdf: project manual
+- result folder: required csv files
+	- Aggregate\_per\_author.csv
+	- predictions\_test\_data.csv
+	- Statistics\_for\_single\_training\_example.csv
 
-## In The Enron.ipynb
-### Input:
 
-Enron email database from Kaggle website <https://www.kaggle.com/wcukierski/enron-email-dataset>
+## Input
+Download enron email database from Kaggle website <https://www.kaggle.com/wcukierski/enron-email-dataset>
 
-### Content:
+## Pipelin
 1. Obtain the data
-2. Extract information from dataset;
+2. Extract information from dataset
 3. Choose reasonable data size for processing;
 4. Using text analysis methods to extract features for later classification.
 5. Visualize the statistics of data
 6. Using machine learning method for an automatic classification task
 7. Store the predictions
 
-### Output files as results:
-In the result folder:
+## Output files
+- Aggregate\_per\_author.csv  :aggregated statistics on all features based on each user
+- Statistics\_for\_single\_training\_example.csv  : statistics on all features for all samples
+- predictions\_test\_data.csv   :the predictions on the test data
 
-1. Aggregate\_per\_author.csv
-2. Statistics\_for\_single\_training\_example.csv
-3. predictions\_test\_data.csv
-
-### Output figures:
-In the figs folder:
-
-1. sample for results.png
-2. avg_nr_word_per_sent.png	
-3. beck_s.png
-4. correlation matrix with top 10 features.png
-5. correlation matrix.png	
-6. distribution of the number of emails.png
-7. nr_colons.png	
-8. shackleton_s.png
-
-### Other output files:
-In the data folder( not included in git):
-
-1. email.csv
--- original data download from kaggle
-
-2. email\_info.csv
---save email information after Message analysis step
-
-3. emails\_df\_1000\_12\_tmp1.pkl
-
-	emails\_df\_1000\_12\_tmp2.pkl
-   	
-   	emails\_df\_1000\_12\_tmp3.pkl
-   	
-   	emails\_df\_1000\_12\_tmp4.pkl
-
--- save doc structures after applying nlp
 
 

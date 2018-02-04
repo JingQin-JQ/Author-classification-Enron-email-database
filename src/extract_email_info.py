@@ -1,7 +1,9 @@
+"""
+This file contains functions to extract raw email to structured data
+"""
+
 import email
 
-
-# Helper functions
 def get_text_from_email(msg):
     '''To get the content from email objects'''
     parts = []

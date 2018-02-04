@@ -1,0 +1,11 @@
+jupyter 
+pandas
+numpy
+statistics
+emot
+seaborn
+matplotlib
+spacy
+nltk
+wordcloud
+sklearn
